@@ -38,3 +38,16 @@ void GenerateNewArray(string [] array, int count)
         }
     }       
 }
+
+
+void PrintNewArray(string [] array, int count)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= count)
+        {
+            System.Console.Write($"\"{array[i]}\", ");    
+        }
+    }   
+    System.Console.WriteLine();    
+}
