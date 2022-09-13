@@ -26,3 +26,15 @@ void PrintArray(string [] array, int lengthArray)
     }
     System.Console.WriteLine();
 }
+
+
+void GenerateNewArray(string [] array, int count)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= count)
+        {
+            array[i] = array[i];
+        }
+    }       
+}
