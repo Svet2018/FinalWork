@@ -16,3 +16,13 @@ void GenerateArray(string [] array, int arrayLength)
         array[i] = Console.ReadLine();     
     }       
 }
+
+
+void PrintArray(string [] array, int lengthArray)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write($"\"{array[i]}\", ");
+    }
+    System.Console.WriteLine();
+}
