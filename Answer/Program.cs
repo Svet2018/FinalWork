@@ -51,3 +51,23 @@ void PrintNewArray(string [] array, int count)
     }   
     System.Console.WriteLine();    
 }
+
+
+System.Console.WriteLine("Введите какое количество строк Вы хотите проверить. ");
+
+int lengthArray = Convert.ToInt32(Console.ReadLine());
+string [] newArray = new string [lengthArray];
+
+
+GenerateArray(newArray, lengthArray);
+System.Console.WriteLine();
+System.Console.WriteLine($"Сгененрирован массив из {lengthArray} строк:");
+System.Console.WriteLine();
+PrintArray(newArray, lengthArray);
+System.Console.WriteLine();
+int count = 3;
+System.Console.WriteLine($"Сгененрирован новый массив, в котором длина строк меньше или равна {count} символам:");
+System.Console.WriteLine();
+GenerateNewArray(newArray, count);
+PrintNewArray(newArray, count);
+System.Console.WriteLine();
